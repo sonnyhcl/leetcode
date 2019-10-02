@@ -1,0 +1,1076 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>201-300 · LeetCode题解</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sonnyhcl">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="301-400.html" />
+    
+    
+    <link rel="prev" href="101-200.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"sonnyhcl","repo":"leetcode","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../README-CN.html">
+            
+                <a href="../README-CN.html">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1-100.html">
+            
+                <a href="1-100.html">
+            
+                    
+                    1-100
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="101-200.html">
+            
+                <a href="101-200.html">
+            
+                    
+                    101-200
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="201-300.html">
+            
+                <a href="201-300.html">
+            
+                    
+                    201-300
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="301-400.html">
+            
+                <a href="301-400.html">
+            
+                    
+                    301-400
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="401-500.html">
+            
+                <a href="401-500.html">
+            
+                    
+                    401-500
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="501-600.html">
+            
+                <a href="501-600.html">
+            
+                    
+                    501-600
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="601-700.html">
+            
+                <a href="601-700.html">
+            
+                    
+                    601-700
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="701-800.html">
+            
+                <a href="701-800.html">
+            
+                    
+                    701-800
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="801-900.html">
+            
+                <a href="801-900.html">
+            
+                    
+                    801-900
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="901-1000.html">
+            
+                <a href="901-1000.html">
+            
+                    
+                    901-1000
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">LeetCode题解列表</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="1-Two-Sum.html">
+            
+                <a href="1-Two-Sum.html">
+            
+                    
+                    1-Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >201-300</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#201-300"><b></b>201-300</a></li></ul></div><a href="#201-300" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="201-300"><a name="201-300" class="anchor-navigation-ex-anchor" href="#201-300"><i class="fa fa-link" aria-hidden="true"></i></a>201-300</h1>
+<p>(&apos;$&apos; means the problem is locked on Leetcode, &apos;*&apos; means the problem is related to Database, &apos;#&apos; means the problem is related to Shell.)</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Title</th>
+<th>Solution</th>
+<th>Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/300" target="_blank">Longest Increasing Subsequence</a></td>
+<td>31.50%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>299</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/299" target="_blank">Bulls and Cows</a></td>
+<td>23.80%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>298</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/298" target="_blank">Binary Tree Longest Consecutive Sequence</a> $</td>
+<td>32.20%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>297</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/297" target="_blank">Serialize and Deserialize Binary Tree</a></td>
+<td>23.80%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>296</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/296" target="_blank">Best Meeting Point</a> $</td>
+<td>41.40%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>295</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/295" target="_blank">Find Median from Data Stream</a></td>
+<td>18.60%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>294</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/294" target="_blank">Flip Game II</a> $</td>
+<td>38.10%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>293</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/293" target="_blank">Flip Game</a> $</td>
+<td>47.60%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>292</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/292" target="_blank">Nim Game</a></td>
+<td>49.50%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>291</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/291" target="_blank">Word Pattern II</a> $</td>
+<td>31.50%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>290</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/290" target="_blank">Word Pattern</a></td>
+<td>26.50%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>289</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/289" target="_blank">Game of Life</a></td>
+<td>32.60%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>288</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/288" target="_blank">Unique Word Abbreviation</a> $</td>
+<td>16.80%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>287</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/287" target="_blank">Find the Duplicate Number</a></td>
+<td>32.80%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>286</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/286" target="_blank">Walls and Gates</a> $</td>
+<td>29.90%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>285</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/285" target="_blank">Inorder Successor in BST</a> $</td>
+<td>32.50%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>284</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/284" target="_blank">Peeking Iterator</a></td>
+<td>31.00%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>283</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/283" target="_blank">Move Zeroes</a></td>
+<td>41.40%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>282</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/282" target="_blank">Expression Add Operators</a></td>
+<td>18.90%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>281</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/281" target="_blank">Zigzag Iterator</a> $</td>
+<td>37.20%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>280</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/280" target="_blank">Wiggle Sort</a> $</td>
+<td>43.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>279</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/279" target="_blank">Perfect Squares</a></td>
+<td>28.80%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>278</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/278" target="_blank">First Bad Version</a></td>
+<td>19.80%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>277</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/277" target="_blank">Find the Celebrity</a> $</td>
+<td>31.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>276</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/276" target="_blank">Paint Fence</a> $</td>
+<td>25.00%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>275</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/275" target="_blank">H-Index II</a></td>
+<td>31.40%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>274</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/274" target="_blank">H-Index</a></td>
+<td>25.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>273</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/273" target="_blank">Integer to English Words</a></td>
+<td>15.50%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>272</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/272" target="_blank">Closest Binary Search Tree Value II</a> $</td>
+<td>26.90%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>271</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/271" target="_blank">Encode and Decode Strings</a> $</td>
+<td>25.40%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>270</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/270" target="_blank">Closest Binary Search Tree Value</a> $</td>
+<td>29.40%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>269</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/269" target="_blank">Alien Dictionary</a> $</td>
+<td>16.50%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>268</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/268" target="_blank">Missing Number</a></td>
+<td>34.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>267</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/267" target="_blank">Palindrome Permutation II</a> $</td>
+<td>22.50%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>266</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/266" target="_blank">Palindrome Permutation</a> $</td>
+<td>45.80%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>265</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/265" target="_blank">Paint House II</a> $</td>
+<td>30.00%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>264</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/264" target="_blank">Ugly Number II</a></td>
+<td>21.60%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>263</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/263" target="_blank">Ugly Number</a></td>
+<td>32.60%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>262</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/262" target="_blank">Trips and Users</a> *</td>
+<td>16.10%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>261</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/261" target="_blank">Graph Valid Tree</a> $</td>
+<td>25.40%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>260</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/260" target="_blank">Single Number III</a></td>
+<td>37.60%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>259</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/259" target="_blank">3Sum Smaller</a> $</td>
+<td>34.20%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>258</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/258" target="_blank">Add Digits</a></td>
+<td>46.50%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>257</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/257" target="_blank">Binary Tree Paths</a></td>
+<td>21.90%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>256</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/256" target="_blank">Paint House</a> $</td>
+<td>38.40%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>255</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/255" target="_blank">Verify Preorder Sequence in Binary Search Tree</a> $</td>
+<td>32.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>254</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/254" target="_blank">Factor Combinations</a> $</td>
+<td>29.00%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>253</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/253" target="_blank">Meeting Rooms II</a> $</td>
+<td>28.80%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>252</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/252" target="_blank">Meeting Rooms</a> $</td>
+<td>35.40%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>251</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/251" target="_blank">Flatten 2D Vector</a> $</td>
+<td>28.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>250</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/250" target="_blank">Count Univalue Subtrees</a> $</td>
+<td>32.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>249</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/249" target="_blank">Group Shifted Strings</a> $</td>
+<td>25.20%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>248</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/248" target="_blank">Strobogrammatic Number III</a> $</td>
+<td>21.80%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>247</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/247" target="_blank">Strobogrammatic Number II</a> $</td>
+<td>26.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>246</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/246" target="_blank">Strobogrammatic Number</a> $</td>
+<td>31.60%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>245</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/245" target="_blank">Shortest Word Distance III</a> $</td>
+<td>43.20%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>244</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/244" target="_blank">Shortest Word Distance II</a> $</td>
+<td>33.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>243</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/243" target="_blank">Shortest Word Distance</a> $</td>
+<td>41.80%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>242</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/242" target="_blank">Valid Anagram</a></td>
+<td>39.30%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>241</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/241" target="_blank">Different Ways to Add Parentheses</a></td>
+<td>27.10%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>240</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/240" target="_blank">Search a 2D Matrix II</a></td>
+<td>31.40%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>239</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/239" target="_blank">Sliding Window Maximum</a></td>
+<td>24.30%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>238</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/238" target="_blank">Product of Array Except Self</a></td>
+<td>42.40%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>237</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/237" target="_blank">Delete Node in a Linked List</a></td>
+<td>50.90%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>236</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/236" target="_blank">Lowest Common Ancestor of a Binary Tree</a></td>
+<td>28.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>235</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/235" target="_blank">Lowest Common Ancestor of a Binary Search Tree</a></td>
+<td>38.90%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>234</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/234" target="_blank">Palindrome Linked List</a></td>
+<td>23.80%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>233</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/233" target="_blank">Number of Digit One</a></td>
+<td>16.10%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>232</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/232" target="_blank">Implement Queue using Stacks</a></td>
+<td>37.40%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>231</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/231" target="_blank">Power of Two</a></td>
+<td>31.30%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>230</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/230" target="_blank">Kth Smallest Element in a BST</a></td>
+<td>30.50%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>229</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/229" target="_blank">Majority Element II</a></td>
+<td>30.50%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>228</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/228" target="_blank">Summary Ranges</a></td>
+<td>21.10%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>227</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/227" target="_blank">Basic Calculator II</a></td>
+<td>18.00%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>226</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/226" target="_blank">Invert Binary Tree</a></td>
+<td>35.40%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>225</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/225" target="_blank">Implement Stack using Queues</a></td>
+<td>29.60%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>224</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/224" target="_blank">Basic Calculator</a></td>
+<td>15.80%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>223</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/223" target="_blank">Rectangle Area</a></td>
+<td>25.60%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>222</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/222" target="_blank">Count Complete Tree Nodes</a></td>
+<td>19.40%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>221</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/221" target="_blank">Maximal Square</a></td>
+<td>20.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>220</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/220" target="_blank">Contains Duplicate III</a></td>
+<td>15.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>219</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/219" target="_blank">Contains Duplicate II</a></td>
+<td>25.60%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>218</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/218" target="_blank">The Skyline Problem</a></td>
+<td>16.20%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>217</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/217" target="_blank">Contains Duplicate</a></td>
+<td>35.90%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>216</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/216" target="_blank">Combination Sum III</a></td>
+<td>27.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>215</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/215" target="_blank">Kth Largest Element in an Array</a></td>
+<td>27.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>214</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/214" target="_blank">Shortest Palindrome</a></td>
+<td>16.80%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>213</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/213" target="_blank">House Robber II</a></td>
+<td>26.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>212</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/212" target="_blank">Word Search II</a></td>
+<td>15.00%</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td>211</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/211" target="_blank">Add and Search Word - Data structure design</a></td>
+<td>20.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>210</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/210" target="_blank">Course Schedule II</a></td>
+<td>19.30%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>209</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/209" target="_blank">Minimum Size Subarray Sum</a></td>
+<td>22.90%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>208</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/208" target="_blank">Implement Trie (Prefix Tree)</a></td>
+<td>24.80%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>207</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/207" target="_blank">Course Schedule</a></td>
+<td>21.70%</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>206</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/206" target="_blank">Reverse Linked List</a></td>
+<td>31.50%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>205</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/205" target="_blank">Isomorphic Strings</a></td>
+<td>24.20%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>204</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/204" target="_blank">Count Primes</a></td>
+<td>19.00%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>203</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/203" target="_blank">Remove Linked List Elements</a></td>
+<td>25.80%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>202</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/202" target="_blank">Happy Number</a></td>
+<td>31.40%</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>201</td>
+<td><a href="https://github.com/grandyang/LeetCode-All-In-One/issues/201" target="_blank">Bitwise AND of Numbers Range</a></td>
+<td>23.30%</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="101-200.html" class="navigation navigation-prev " aria-label="Previous page: 101-200">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="301-400.html" class="navigation navigation-next " aria-label="Next page: 301-400">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"201-300","level":"1.2.3","depth":2,"next":{"title":"301-400","level":"1.2.4","depth":2,"path":"docs/301-400.md","ref":"docs/301-400.md","articles":[]},"previous":{"title":"101-200","level":"1.2.2","depth":2,"path":"docs/101-200.md","ref":"docs/101-200.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yahei","code","katex","splitter","github-buttons","disqus","-lunr","-search","search-plus","-sharing","sharing-plus","expandable-chapters-small","image-captions","anchor-navigation-ex-toc","hints","custom-favicon"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"leetcode-sonnyhcl"},"yahei":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"hints":{"danger":"fa fa-exclamation-triangle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"code":{"copyButtons":true},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"msyh","size":2},"highlight":{},"favicon":"favicon.ico","github-buttons":{"buttons":[{"user":"sonnyhcl","repo":"leetcode","type":"star","size":"small","count":true}]},"custom-favicon":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"sonnyhcl","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":14,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"LeetCode题解","language":"zh-hans","gitbook":"3.2.3","description":"leetcode"},"file":{"path":"docs/201-300.md","mtime":"2019-10-02T09:14:22.336Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-02T09:16:03.698Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

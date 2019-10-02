@@ -1,0 +1,551 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1-Two Sum · LeetCode题解</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sonnyhcl">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-yahei/yahei.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="901-1000.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"sonnyhcl","repo":"leetcode","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../README-CN.html">
+            
+                <a href="../README-CN.html">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1-100.html">
+            
+                <a href="1-100.html">
+            
+                    
+                    1-100
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="101-200.html">
+            
+                <a href="101-200.html">
+            
+                    
+                    101-200
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="201-300.html">
+            
+                <a href="201-300.html">
+            
+                    
+                    201-300
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="301-400.html">
+            
+                <a href="301-400.html">
+            
+                    
+                    301-400
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="401-500.html">
+            
+                <a href="401-500.html">
+            
+                    
+                    401-500
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="501-600.html">
+            
+                <a href="501-600.html">
+            
+                    
+                    501-600
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="601-700.html">
+            
+                <a href="601-700.html">
+            
+                    
+                    601-700
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="701-800.html">
+            
+                <a href="701-800.html">
+            
+                    
+                    701-800
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="801-900.html">
+            
+                <a href="801-900.html">
+            
+                    
+                    801-900
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="901-1000.html">
+            
+                <a href="901-1000.html">
+            
+                    
+                    901-1000
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">LeetCode题解列表</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="1-Two-Sum.html">
+            
+                <a href="1-Two-Sum.html">
+            
+                    
+                    1-Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1-Two Sum</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
+<p>You may assume that each input would have  exactly  one solution, and you may not use the  same  element twice.</p>
+<p>Example:</p>
+<pre><code>Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+</code></pre><p>&#x5566;&#x5566;&#x5566;&#xFF0C;&#x6B22;&#x8FCE;&#x5F00;&#x542F; LeetCode &#x5237;&#x9898;&#x7684;&#x65C5;&#x7A0B;&#xFF0C;&#x8FD9;&#x5C06;&#x662F;&#x4E00;&#x6BB5;&#x6F2B;&#x957F;&#x800C;&#x53C8;&#x8270;&#x8F9B;&#x7684;&#x65C5;&#x7A0B;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x6761;&#x6500;&#x767B;&#x73E0;&#x7A46;&#x6717;&#x739B;&#x7684;&#x7691;&#x7691;&#x96EA;&#x5C71;&#x8DEF;&#xFF0C;&#x8FD9;&#x662F;&#x901A;&#x5411; One Piece &#x5B9D;&#x85CF;&#x7684;&#x4F1F;&#x5927;&#x822A;&#x8DEF;&#xFF0C;&#x8FD9;&#x662F;&#x6210;&#x4E3A;&#x706B;&#x5F71;&#x7684;&#x65E0;&#x6BD4;&#x6B8B;&#x9177;&#x7684;&#x4FEE;&#x7F57;&#x573A;&#xFF0C;&#x8FD9;&#x662F;&#x6253;&#x7834;&#x540A;&#x4E1D;&#x4E0E;&#x9AD8;&#x5BCC;&#x5E05;&#x4E4B;&#x95F4;&#x754C;&#x9650;&#x7684;&#x5D29;&#x7389;&#x3002;&#x4F46;&#x8BF7;&#x4E0D;&#x8981;&#x5BB3;&#x6015;&#xFF0C;&#x5728;&#x8001;&#x8239;&#x957F; Grandyang &#x535A;&#x4E3B;&#x7684;&#x5E26;&#x9886;&#x4E0B;&#xFF0C;&#x5FC5;&#x5C06;&#x4E00;&#x8DEF;&#x62AB;&#x8346;&#x65A9;&#x68D8;&#xFF0C;&#x5C06;&#x5404;&#x4F4D;&#x5E26;&#x5230;&#x6210;&#x529F;&#x7684;&#x5F7C;&#x5CB8;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E00;&#x5B9A;&#x8981;&#x7262;&#x8BB0;&#x7684;&#x662F;&#xFF0C;&#x4E0D;&#x8981;&#x4E0B;&#x8239;&#xFF0C;&#x4E0D;&#x8981;&#x4E2D;&#x9014;&#x653E;&#x5F03;&#xFF0C;&#x8981;&#x575A;&#x6301;&#xFF0C;&#x8981;&#x81EA;&#x6211;&#x4FEE;&#x70BC;&#xFF0C;&#x4E0D;&#x65AD;&#x6210;&#x957F;&#xFF01;&#x90A3;&#x4E48;&#xFF0C;&#x8D77;&#x822A;&#x5427;&#xFF5E;&#x8FD9;&#x9053; Two Sum &#x7684;&#x9898;&#x76EE;&#x4F5C;&#x4E3A; LeetCode &#x7684;&#x5F00;&#x7BC7;&#x4E4B;&#x9898;&#xFF0C;&#x4E43;&#x662F;&#x7ECF;&#x5178;&#x4E2D;&#x7684;&#x7ECF;&#x5178;&#xFF0C;&#x6B63;&#x6240;&#x8C13;&#x2018;<strong>&#x5E73;&#x751F;&#x4E0D;&#x8BC6; TwoSum&#xFF0C;&#x5237;&#x5C3D; LeetCode &#x4E5F;&#x6789;&#x7136;</strong>&#x2019;&#xFF0C;&#x5C31;&#x50CF;&#x82F1;&#x8BED;&#x5355;&#x8BCD;&#x4E66;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x603B;&#x662F; Abandon &#x4E00;&#x6837;&#xFF0C;&#x5F88;&#x591A;&#x6CA1;&#x6709;&#x6BC5;&#x529B;&#x575A;&#x6301;&#x7684;&#x4EBA;&#x5C31;&#x53EA;&#x80FD;&#x8BB0;&#x4F4F;&#x8FD9;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x5355;&#x8BCD;&#x4E66;&#x5C31;&#x524D;&#x51E0;&#x9875;&#x6709;&#x7FFB;&#x52A8;&#x7684;&#x75D5;&#x8FF9;&#xFF0C;&#x540E;&#x9762;&#x90FD;&#x662F;&#x5D2D;&#x65B0;&#x5982;&#x521D;&#xFF0C;&#x9053;&#x7406;&#x4E0D;&#x9700;&#x591A;&#x8BB2;&#xFF0C;&#x9E21;&#x6C64;&#x4E0D;&#x5FC5;&#x591A;&#x704C;&#xFF0C;&#x660E;&#x767D;&#x7684;&#x4EBA;&#x81EA;&#x7136;&#x660E;&#x767D;&#x3002;</p>
+<p>&#x8FD9;&#x9053;&#x9898;&#x7ED9;&#x4E86;&#x6211;&#x4EEC;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x6570;target&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x627E;&#x5230;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x4F7F;&#x5176;&#x548C;&#x4E3A; target&#xFF0C;&#x4E4D;&#x4E00;&#x770B;&#x5C31;&#x611F;&#x89C9;&#x53EF;&#x4EE5;&#x7528;&#x66B4;&#x529B;&#x641C;&#x7D22;&#xFF0C;&#x4F46;&#x662F;&#x731C;&#x5230; OJ &#x80AF;&#x5B9A;&#x4E0D;&#x4F1A;&#x5141;&#x8BB8;&#x7528;&#x66B4;&#x529B;&#x641C;&#x7D22;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E8E;&#x662F;&#x53BB;&#x8BD5;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x679C;&#x7136;&#x662F; Time Limit Exceeded&#xFF0C;&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F; O(n^2)&#x3002;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x60F3;&#x4E2A; O(n) &#x7684;&#x7B97;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x7531;&#x4E8E;&#x66B4;&#x529B;&#x641C;&#x7D22;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x904D;&#x5386;&#x6240;&#x6709;&#x7684;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x7136;&#x540E;&#x7B97;&#x5176;&#x548C;&#xFF0C;&#x8FD9;&#x6837;&#x867D;&#x7136;&#x8282;&#x7701;&#x4E86;&#x7A7A;&#x95F4;&#xFF0C;&#x4F46;&#x662F;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x9AD8;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x65F6;&#x95F4;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x7A7A;&#x95F4;&#x6765;&#x6362;&#xFF0C;&#x8FD9;&#x7B97;&#x662F;&#x4E00;&#x4E2A; trade off &#x5427;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x60F3;&#x7528;&#x7EBF;&#x6027;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x6765;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x662F;&#x8BF4;&#x53EA;&#x80FD;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5462;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E8B;&#x5148;&#x5C06;&#x5176;&#x5B58;&#x50A8;&#x8D77;&#x6765;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A; HashMap&#xFF0C;&#x6765;&#x5EFA;&#x7ACB;&#x6570;&#x5B57;&#x548C;&#x5176;&#x5750;&#x6807;&#x4F4D;&#x7F6E;&#x4E4B;&#x95F4;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053; HashMap &#x662F;&#x5E38;&#x6570;&#x7EA7;&#x7684;&#x67E5;&#x627E;&#x6548;&#x7387;&#xFF0C;&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x904D;&#x5386;&#x6570;&#x7EC4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7528; target &#x51CF;&#x53BB;&#x904D;&#x5386;&#x5230;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x5C31;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x7684;&#x6570;&#x5B57;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x5728; HashMap &#x4E2D;&#x67E5;&#x627E;&#x5176;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5373;&#x53EF;&#xFF0C;&#x6CE8;&#x610F;&#x8981;&#x5224;&#x65AD;&#x67E5;&#x627E;&#x5230;&#x7684;&#x6570;&#x5B57;&#x4E0D;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x6BD4;&#x5982; target &#x662F;4&#xFF0C;&#x904D;&#x5386;&#x5230;&#x4E86;&#x4E00;&#x4E2A;2&#xFF0C;&#x90A3;&#x4E48;&#x53E6;&#x5916;&#x4E00;&#x4E2A;2&#x4E0D;&#x80FD;&#x662F;&#x4E4B;&#x524D;&#x90A3;&#x4E2A;2&#xFF0C;&#x6574;&#x4E2A;&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#x4E3A;&#xFF1A;&#x5148;&#x904D;&#x5386;&#x4E00;&#x904D;&#x6570;&#x7EC4;&#xFF0C;&#x5EFA;&#x7ACB; HashMap &#x6620;&#x5C04;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x904D;&#x5386;&#x4E00;&#x904D;&#xFF0C;&#x5F00;&#x59CB;&#x67E5;&#x627E;&#xFF0C;&#x627E;&#x5230;&#x5219;&#x8BB0;&#x5F55; index&#x3002;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>C++ &#x89E3;&#x6CD5;&#x4E00;&#xFF1A;</p>
+<pre><code class="lang-C++"><span class="hljs-keyword">class</span> Solution {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; twoSum(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; nums, <span class="hljs-keyword">int</span> target) {
+        <span class="hljs-built_in">unordered_map</span>&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>&gt; m;
+        <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; res;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.size(); ++i) {
+            m[nums[i]] = i;
+        }
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.size(); ++i) {
+            <span class="hljs-keyword">int</span> t = target - nums[i];
+            <span class="hljs-keyword">if</span> (m.count(t) &amp;&amp; m[t] != i) {
+                res.push_back(i);
+                res.push_back(m[t]);
+                <span class="hljs-keyword">break</span>;
+            }
+        }
+        <span class="hljs-keyword">return</span> res;
+    }
+};
+</code></pre>
+<p>Java &#x89E3;&#x6CD5;&#x4E00;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] twoSum(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target) {
+        HashMap&lt;Integer, Integer&gt; m = <span class="hljs-keyword">new</span> HashMap&lt;Integer, Integer&gt;();
+        <span class="hljs-keyword">int</span>[] res = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>];
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; ++i) {
+            m.put(nums[i], i);
+        }
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; ++i) {
+            <span class="hljs-keyword">int</span> t = target - nums[i];
+            <span class="hljs-keyword">if</span> (m.containsKey(t) &amp;&amp; m.get(t) != i) {
+                res[<span class="hljs-number">0</span>] = i;
+                res[<span class="hljs-number">1</span>] = m.get(t);
+                <span class="hljs-keyword">break</span>;
+            }
+        }
+        <span class="hljs-keyword">return</span> res;
+    }
+}
+</code></pre>
+<p>&#x6216;&#x8005;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5199;&#x7684;&#x66F4;&#x52A0;&#x7B80;&#x6D01;&#x4E00;&#x4E9B;&#xFF0C;&#x628A;&#x4E24;&#x4E2A; for &#x5FAA;&#x73AF;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#xFF1A;</p>
+<p>C++ &#x89E3;&#x6CD5;&#x4E8C;&#xFF1A;</p>
+<pre><code class="lang-C++"><span class="hljs-keyword">class</span> Solution {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; twoSum(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; nums, <span class="hljs-keyword">int</span> target) {
+        <span class="hljs-built_in">unordered_map</span>&lt;<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>&gt; m;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.size(); ++i) {
+            <span class="hljs-keyword">if</span> (m.count(target - nums[i])) {
+                <span class="hljs-keyword">return</span> {i, m[target - nums[i]]};
+            }
+            m[nums[i]] = i;
+        }
+        <span class="hljs-keyword">return</span> {};
+    }
+};
+</code></pre>
+<p>Java &#x89E3;&#x6CD5;&#x4E8C;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] twoSum(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target) {
+        HashMap&lt;Integer, Integer&gt; m = <span class="hljs-keyword">new</span> HashMap&lt;Integer, Integer&gt;();
+        <span class="hljs-keyword">int</span>[] res = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">2</span>];
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; ++i) {
+            <span class="hljs-keyword">if</span> (m.containsKey(target - nums[i])) {
+                res[<span class="hljs-number">0</span>] = i;
+                res[<span class="hljs-number">1</span>] = m.get(target - nums[i]);
+                <span class="hljs-keyword">break</span>;
+            }
+            m.put(nums[i], i);
+        }
+        <span class="hljs-keyword">return</span> res;
+    }
+}
+</code></pre>
+<p>&#x7C7B;&#x4F3C;&#x9898;&#x76EE;&#xFF1A;</p>
+<p><a href="http://www.cnblogs.com/grandyang/p/4515925.html" target="_blank">4Sum</a></p>
+<p><a href="http://www.cnblogs.com/grandyang/p/5235086.html" target="_blank">3Sum Smaller</a></p>
+<p><a href="http://www.cnblogs.com/grandyang/p/4510984.html" target="_blank">3Sum Closest</a></p>
+<p><a href="http://www.cnblogs.com/grandyang/p/4481576.html" target="_blank">3Sum</a></p>
+<p><a href="http://www.cnblogs.com/grandyang/p/5184143.html" target="_blank">Two Sum III - Data structure design</a></p>
+<p><a href="http://www.cnblogs.com/grandyang/p/5185815.html" target="_blank">Two Sum II - Input array is sorted </a></p>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;</p>
+<p><a href="https://leetcode.com/problems/two-sum/solution/" target="_blank">https://leetcode.com/problems/two-sum/solution/</a></p>
+<p><a href="https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution" target="_blank">https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution</a></p>
+<p><a href="https://leetcode.com/problems/two-sum/discuss/13/Accepted-C++-O(n)-Solution" target="_blank">https://leetcode.com/problems/two-sum/discuss/13/Accepted-C++-O(n)-Solution</a></p>
+<p><a href="http://www.cnblogs.com/grandyang/p/4606334.html" target="_blank">LeetCode All in One &#x9898;&#x76EE;&#x8BB2;&#x89E3;&#x6C47;&#x603B;(&#x6301;&#x7EED;&#x66F4;&#x65B0;&#x4E2D;...)</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="901-1000.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 901-1000">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1-Two Sum","level":"2.1","depth":1,"previous":{"title":"901-1000","level":"1.2.10","depth":2,"path":"docs/901-1000.md","ref":"docs/901-1000.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yahei","code","katex","splitter","github-buttons","disqus","-lunr","-search","search-plus","-sharing","sharing-plus","expandable-chapters-small","image-captions","anchor-navigation-ex-toc","hints","custom-favicon"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"leetcode-sonnyhcl"},"yahei":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"hints":{"danger":"fa fa-exclamation-triangle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"code":{"copyButtons":true},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showLevel":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"msyh","size":2},"highlight":{},"favicon":"favicon.ico","github-buttons":{"buttons":[{"user":"sonnyhcl","repo":"leetcode","type":"star","size":"small","count":true}]},"custom-favicon":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"sonnyhcl","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":14,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"LeetCode题解","language":"zh-hans","gitbook":"3.2.3","description":"leetcode"},"file":{"path":"docs/1-Two-Sum.md","mtime":"2019-10-02T09:14:22.336Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-02T09:16:03.698Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
